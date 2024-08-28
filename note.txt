@@ -1,0 +1,14 @@
+application level middleware = yeh pure server ke liye hota hian 
+router level middleware = yeh ksis particular route ke liye hota hian 
+built in middleware -
+express.static = serves static assets such as HTML, CSS, js
+express.json = parses incoming request with JSON payload 
+express.urlencoded = parses incoming request with url-encoded payloads
+//Application-Level Middleware:
+This type of middleware is applied to the entire server. It runs for every request made to the server, regardless of which route is being accessed.
+2. Router-Level Middleware:
+This middleware is applied only to specific routes. It runs only when a request is made to those particular routes, not for the entire server.
+3. Built-in Middleware:
+express.static: This middleware serves static assets like HTML files, CSS files, JavaScript files, images, etc. It allows you to serve these files directly to the client from the server.
+express.json: This middleware parses incoming requests that have a JSON payload. It reads the JSON data sent in the request body and makes it accessible as req.body in your route handlers.
+express.urlencoded: This middleware parses incoming requests with URL-encoded payloads, typically from HTML form submissions. It decodes the data sent in the request body and makes it available as req.body in your route handlers.
